@@ -1,0 +1,6 @@
+<p>Input the number of floors</p>
+<input type="number"  value="0" [(ngModel)] = "floorsNumber" (change) = "refreshFloors()">
+<div *ngFor = "let floor of floors  index as i">
+  <h2>Floor number {{i}}</h2>
+  <app-floor > </app-floor>
+  </div>

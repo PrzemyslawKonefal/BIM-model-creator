@@ -1,0 +1,15 @@
+<div class="settings">
+  <span (click) = "settingSwitch(1)">Size</span>
+  <span (click) = "settingSwitch(2)">Add Space</span>
+  <div class="size-dropdown" *ngIf = "settingNumber === 1">
+    <p>Floor Width</p>
+    <input type="number" [value] = "floorWidth" [(ngModel)] = "floorWidth">
+    <p>Floor Height</p>
+    <input type="number" [value] = "floorHeight" [(ngModel)] = "floorHeight">
+  </div>
+</div>
+<div class="floor" [ngStyle] = "{'width.px': floorWidth, 'height.px': floorHeight}">
+  <p class="floor-width">{{floorWidth}}</p>
+  <p class="floor-height">{{floorHeight}}</p>
+ <app-spaces [spacesQuantity] = "spacesNumber"></app-spaces>
+</div>
