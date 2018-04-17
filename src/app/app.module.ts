@@ -7,9 +7,8 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { CreateModelComponent } from './create-model/create-model.component';
 import { FloorsComponent } from './create-model/floors/floors.component';
-import { SpacesComponent } from './create-model/floors/floor/spaces/spaces.component';
 import { FloorComponent } from './create-model/floors/floor/floor.component';
-import { SpaceComponent } from './create-model/floors/floor/spaces/space/space.component';
+import { SpaceComponent } from './create-model/floors/floor/space/space.component';
 
 
 @NgModule({
@@ -18,7 +17,6 @@ import { SpaceComponent } from './create-model/floors/floor/spaces/space/space.c
     MenuComponent,
     CreateModelComponent,
     FloorsComponent,
-    SpacesComponent,
     FloorComponent,
     SpaceComponent
   ],

@@ -6,7 +6,7 @@
   height: 300px;
   border: 1px solid #000;
 }
-.floor *{
+.floor *, .settings *{
   margin:0;
 }
 .floor-width{
@@ -32,9 +32,6 @@
   bottom: 25px;
   background: #3cf9c6;
   border: 1px solid #000;
-}
-.settings *{
-  margin: 0;
 }
 .settings > span{
   font-size: 1.4em;
@@ -62,15 +59,47 @@
 h2{
   margin-bottom: 40px;
 }
+.warning{
+  margin-bottom: 40px;
+  color: #ff0d05;
+}
+h4{
+  margin:0;
+  margin-bottom: 20px;
+}
 input{
-  height: 50px;
   text-align: center;
   background: #2bb08c;
   border-radius: 10px;
   border:none;
   outline: none;
-  margin: 10px;
+  margin-bottom: 10px;
 }
 input:focus{
   background: #249375;
+}
+.spaces{
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+.spaces-settings{
+  position: relative;
+  margin: auto;
+  width: 300px;
+  background: #3cf9c6;
+  position: relative;
+  transform: translateY(15px);
+  border: 1px solid #000;
+  margin-bottom: 35px;
+}
+.close{
+  position: absolute;
+  top:0px;
+  right: 5px;
+  cursor: pointer;
 }

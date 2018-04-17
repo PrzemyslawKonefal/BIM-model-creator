@@ -2,5 +2,6 @@
 <input type="number"  value="0" [(ngModel)] = "floorsNumber" (change) = "refreshFloors()">
 <div *ngFor = "let floor of floors  index as i">
   <h2>Floor number {{i}}</h2>
-  <app-floor > </app-floor>
+  <app-floor (sizes) = "checkSizes($event, i)"
+   [previousFloorSize] = "i > 0 ? FloorSizes[i-1]: {floorWidth: 999999999, floorHeight: 999999999}" > </app-floor>
   </div>

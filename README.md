@@ -1,6 +1,6 @@
 # BIMModel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
+Building information modeling (BIM) is a process involving the generation and management of digital representations of physical and functional characteristics of places.
 
 ## Development server
 
