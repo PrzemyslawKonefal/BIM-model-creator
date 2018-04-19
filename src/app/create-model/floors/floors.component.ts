@@ -8,14 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class FloorsComponent implements OnInit {
   floorsNumber = 0;
   floors = Array();
-  FloorSizes: = Array();
+  spacesLegend:[{spaceType:string, spaceColor:string}] = [{spaceType: "office", spaceColor: "#333333"}];
+
+  FloorSizes:[floorWidth:number, floorHeight:number] = Array();
+
   refreshFloors(){
     this.floors = Array(this.floorsNumber).fill(1);
   }
   checkSizes(floorSizes: {floorWidth:number, floorHeight:number}, i){
     this.FloorSizes[i] = floorSizes;
   }
+
+  updateLegend(legendEl:{spaceType:string, spaceColor: string}, index){
+    this.spacesLegend[index] = legendEl;
+  }
   constructor() {
+
    }
 
   ngOnInit() {

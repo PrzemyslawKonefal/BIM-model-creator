@@ -7,7 +7,8 @@ import { Component, OnInit, EventEmitter, Output, Input} from '@angular/core';
 })
 export class FloorComponent implements OnInit {
   @Input() previousFloorSize:({floorWidth:number, floorHeight:number});
-  @Output() sizes = new EventEmitter<{width:number, height: number}>;
+  @Input() legend:[{spaceType:string, spaceColor:string}];
+  @Output() sizes:EventEmitter<{width:number, height: number}> = new EventEmitter();
   floorWidth:number = 300;
   floorHeight:number = 300;
   settingNumber:number = 0;
@@ -18,7 +19,7 @@ export class FloorComponent implements OnInit {
   settingSwitch(settingIndex:number){
     this.settingNumber = settingIndex;
     if(this.settingNumber === 2){
-      this.spaces.push({type: 'office', width: 20, height: 20, bottom: 0, right:0, isActive:false});
+      this.spaces.push({type: '', width: 20, height: 20, bottom: 0, right:0, isActive:false});
     }
   }
   spaceSettings(spaceIndex:number){

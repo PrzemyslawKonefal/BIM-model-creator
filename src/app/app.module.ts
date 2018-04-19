@@ -9,6 +9,7 @@ import { CreateModelComponent } from './create-model/create-model.component';
 import { FloorsComponent } from './create-model/floors/floors.component';
 import { FloorComponent } from './create-model/floors/floor/floor.component';
 import { SpaceComponent } from './create-model/floors/floor/space/space.component';
+import { SpacesLegendComponent } from './create-model/floors/spaces-legend/spaces-legend.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SpaceComponent } from './create-model/floors/floor/space/space.componen
     CreateModelComponent,
     FloorsComponent,
     FloorComponent,
-    SpaceComponent
+    SpaceComponent,
+    SpacesLegendComponent
   ],
   imports: [
     BrowserModule,
