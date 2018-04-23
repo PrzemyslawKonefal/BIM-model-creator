@@ -22,26 +22,31 @@ export class FloorComponent implements OnInit {
       this.spaces.push({type: '', width: 20, height: 20, bottom: 0, right:0, isActive:false});
     }
   }
-  spaceSettings(spaceIndex:number){
-    this.editingSpaceIndex =  spaceIndex;
-    this.spaceEdition = true;
-    for(let i = 0; i< this.spaces.length; i++){
-      this.spaces[i].isActive = false;
-    }
-    this.spaces[this.editingSpaceIndex].isActive = true;
+
+  showSpaceSettings(spaceIndex:number){
+        this.spaceEdition = true;
+        this.editingSpaceIndex =  spaceIndex;
+        for(let i = 0; i< this.spaces.length; i++){
+          this.spaces[i].isActive = false;
+        }
+        this.spaces[this.editingSpaceIndex].isActive = true;
   }
+
   closeSetting(settingsNumber:number){
     if(settingsNumber === 0){
       this.settingNumber = 0;
     }
     else{
       this.spaceEdition = false;
+      this.spaces[this.editingSpaceIndex].isActive = false;
+      this.editingSpaceIndex = null;
     }
-    console.log(this.previousFloorSize);
   }
+
   emitSizes(){
     this.sizes.emit({width: this.floorWidth, height: this.floorHeight});
   }
+
   ngAfterViewInit(){
     this.emitSizes();
   }

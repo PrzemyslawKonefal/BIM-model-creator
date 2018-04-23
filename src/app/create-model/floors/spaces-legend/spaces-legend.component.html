@@ -1,17 +1,15 @@
 <div
- style = "display:flex; justify-content: center; padding: 10px 35px; border:1px solid #656565;"
+  class="main"
  (mouseover) = "deleteShow = true"
  (mouseleave) = "deleteShow = false"
  >
   <input
    type="text"
-  style="border:none; background:inherit; padding-left:10px;"
    [(ngModel)] = "spaceLegendData.spaceType"
    (change) = "refreshLegend()"
    >
   <input
   type="color"
-  style="border:none; background: inherit;"
    [(ngModel)] = "spaceLegendData.spaceColor"
    (change) = "refreshLegend()">
    <p

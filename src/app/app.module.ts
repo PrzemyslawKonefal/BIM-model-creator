@@ -10,6 +10,7 @@ import { FloorsComponent } from './create-model/floors/floors.component';
 import { FloorComponent } from './create-model/floors/floor/floor.component';
 import { SpaceComponent } from './create-model/floors/floor/space/space.component';
 import { SpacesLegendComponent } from './create-model/floors/spaces-legend/spaces-legend.component';
+import { ExamplesComponent } from './examples/examples.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SpacesLegendComponent } from './create-model/floors/spaces-legend/space
     FloorsComponent,
     FloorComponent,
     SpaceComponent,
-    SpacesLegendComponent
+    SpacesLegendComponent,
+    ExamplesComponent
   ],
   imports: [
     BrowserModule,

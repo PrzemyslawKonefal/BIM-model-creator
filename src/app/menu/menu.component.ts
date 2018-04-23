@@ -9,8 +9,8 @@ import { AppComponent } from '../app.component';
 export class MenuComponent implements OnInit {
   @Output() CategoryChanged = new EventEmitter();
 
-  createModelRedirect(){
-    this.CategoryChanged.emit(1);
+  Redirect(categoryNumber:number){
+    this.CategoryChanged.emit(categoryNumber);
   }
 
   constructor() { }

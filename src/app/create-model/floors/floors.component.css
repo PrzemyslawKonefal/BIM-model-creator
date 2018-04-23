@@ -1,3 +1,45 @@
+
+h1{
+  color: #fff;
+  margin: 10px;
+}
 h2{
   margin-bottom: 40px;
+    color: #fff;
+}
+#allFloors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+input{
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 15px;
+  font-size: 1.3em;
+  border: 5px solid #305cf6;
+}
+#legend-box{
+  padding: 30px 0 0 0 0px;
+  max-width:400px;
+  margin: 10px auto;
+  border: 5px solid #305cf6;
+  color: #fff;
+  border-radius: 8px;
+
+}
+#legend-box button{
+  margin: 10px;
+  font-size: 1.5em;
+  background: #305cf6;
+  border: none;
+  color:#fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: .3s ease;
+}
+#legend-box button:hover{
+  filter: brightness(70%);
+  cursor: pointer;
 }

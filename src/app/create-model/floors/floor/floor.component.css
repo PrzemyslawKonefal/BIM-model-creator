@@ -4,7 +4,7 @@
   background: #fff;
   width: 300px;
   height: 300px;
-  border: 1px solid #000;
+  border: 2px solid #000;
 }
 .floor *, .settings *{
   margin:0;
@@ -15,6 +15,7 @@
   left:50%;
   transform: translate(-50%, -110%);
   font-size: 1.2em;
+  color: #fff;
 }
 .floor-height{
   position: absolute;
@@ -22,80 +23,101 @@
   top:50%;
   transform: translate(110%, -50%);
   font-size: 1.2em;
+  color: #fff;
 }
 .settings{
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 300px;
   position: relative;
   bottom: 25px;
-  background: #3cf9c6;
+  background: #305cf6;
   border: 1px solid #000;
+  border-radius: 5px;
 }
 .settings > span{
   font-size: 1.4em;
-  padding: 10px 20px;
+  padding: 10px 0;
   cursor: pointer;
-  margin: 0 10px;
   color:#fff;
   transition: .3s ease;
+  flex-grow: 1;
 }
 .settings > span:hover{
-  background: #32cba1;
+  background: #1145f9;
 }
 .settings > div{
   width: 100%;
   position: absolute;
   bottom: -1px;
   transform: translateY(100%);
-  background: #3cf9c6;
+  background: #305cf6;
   z-index: 1;
   border: 1px solid #000;
   border-top: none;
   padding: 5px 0;
+  color:#fff;
 }
-
+input{
+  text-align: center;
+  background: #1649f9;
+  border-radius: 10px;
+  border:none;
+  outline: none;
+  margin-bottom: 10px;
+  transition: .3s ease;
+  font-size: 1em;
+  padding: 5px;
+}
+input:focus{
+  background: #0039ff;
+}
 h2{
   margin-bottom: 40px;
 }
 .warning{
-  margin-bottom: 40px;
+  position: absolute;
+  top:-35px;
+  left:0;
   color: #ff0d05;
+  font-size: 0.8em;
+  transform: translate(12px);
+}
+.warning:last-of-type{
+  transform: translate(12px, 20px);
 }
 h4{
   margin:0;
   margin-bottom: 20px;
 }
-input{
-  text-align: center;
-  background: #2bb08c;
-  border-radius: 10px;
-  border:none;
-  outline: none;
-  margin-bottom: 10px;
-}
-input:focus{
-  background: #249375;
-}
 .spaces{
   height: 100%;
   width: 100%;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items:flex-start;
 }
 .spaces-settings{
   position: relative;
   margin: auto;
   width: 300px;
-  background: #3cf9c6;
+  background: #305cf6;
   position: relative;
   transform: translateY(15px);
   border: 1px solid #000;
   margin-bottom: 35px;
+  color: #fff;
+}
+.remove-button{
+  display: block;
+  background: #ab2012;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline-color: #911a0e;
+  margin: 10px auto;
+  padding: 5px 15px;
+  font-size: 1.1em;
+  cursor: pointer;
 }
 .close{
   position: absolute;
